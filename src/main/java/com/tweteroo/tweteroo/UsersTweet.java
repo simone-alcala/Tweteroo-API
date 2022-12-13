@@ -1,12 +1,14 @@
 package com.tweteroo.tweteroo;
 
-public class User {
+public class UsersTweet {
   private String username;
   private String avatar;
+  private String tweet;
 
-  public User(String username, String avatar) {
-    this.username = username;
+  public UsersTweet(String username, String avatar, String tweet) {
+    this.tweet = tweet;
     this.avatar = avatar;
+    this.username = username;
   }
 
   public String getUsername() {
@@ -17,8 +19,7 @@ public class User {
     return avatar;
   }
 
-  public void setAvatar(String avatar) {
-    this.avatar = avatar;
+  public String getTweet() {
+    return tweet;
   }
-
 }
